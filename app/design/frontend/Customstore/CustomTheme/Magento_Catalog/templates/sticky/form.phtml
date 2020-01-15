@@ -1,0 +1,26 @@
+<div class="sticky-product-info-wrapper">
+    <div class="sticky-product-info">
+        <div class="img-block">
+            <img class="sticky-product-img" id="sticky_product_img" src="#">
+        </div>
+        <div class="title">
+        </div>
+        <div class="price">
+        </div>
+        <div class="btn-cart-wrapper">
+            <div title="Add to Cart" class="action primary tocart">
+                <span>Add to Cart</span>
+            </div>
+        </div>
+        <div class="text">
+            <?=$block->getChildBlock('sticky-cms')->toHtml()?>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    require(['jquery', 'customSticky'], function($){
+        if ($(window).width() > 1024) {
+            customSticky.init();
+        }
+    });
+</script>

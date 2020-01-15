@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="product.infosticky" template="Magento_Catalog::sticky/form.phtml" after="-">
+                <block class="Magento\Cms\Block\Block" name="sticky-cms">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">sticky-product-block</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
