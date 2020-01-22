@@ -15,10 +15,26 @@
         <div class="text">
             <?=$block->getChildBlock('sticky-cms')->toHtml()?>
         </div>
+        <div class="slick-wrapper-new">
+            <div class="slicksaa" data-mage-init='{"homeSlider": {"slidesToShow": "3"}}'>
+                <div class="img-block1">
+                    <p>111</p>
+                </div>
+                <div class="img-block1">
+                    <p>222</p>
+                </div>
+                <div class="img-block1">
+                    <p>333</p>
+                </div>
+                <div class="img-block1">
+                    <p>444</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <script type="text/javascript">
-    require(['jquery', 'customSticky'], function($){
+    require(['jquery', 'homeSlider', "mage/mage", 'customSticky'], function($, homeSlide){
         if ($(window).width() > 1024) {
             customSticky.init();
         }
